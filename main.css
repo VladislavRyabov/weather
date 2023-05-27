@@ -110,13 +110,9 @@ button, button:hover, button:focus, button:active
     border: 1px solid #fff;
 
     @media (max-width: 560px) {
-        width: 350px;
-
-    }
-
-    @media (max-width: 400px) {
         width: 310px;
         padding: 29px;
+
     }
 }
 
