@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: #ffffff;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box; 
+    margin: 0;
+}
+
+p {
+	margin: 0;
+    font-size: 25px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    ;
+    @media (max-width: 375px) {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+.out {
+    width: 100%; 
+}
+.out__wrap {
+
+}
+.wrap {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap__select {
+    position: absolute;
+    
+    @media (max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+.style {
+    background: #232323eb;
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px 45px 2px 25px;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    width: 200px;
+}
+.test {
+}
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    height:100vh
+}
+.card {
+    background: #232323eb;
+    border-radius: 20px;
+    display: inline-block;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+
+    @media (max-width: 560px) {
+        width: 350px;
+
+    }
+
+    @media (max-width: 400px) {
+        width: 310px;
+        padding: 29px;
+    }
+}
+
+.card__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__heading:first-child {
+    flex-direction: column;
+}
+.card__city {
+    font-size: 50px;
+    @media (max-width: 400px) {
+        font-size: 30px;
+    }
+}
+.card__bt {
+    margin-bottom: 50px;
+}
+.card__img-icon {
+    width: 90px;
+    height: 90px;
+}
