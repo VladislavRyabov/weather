@@ -65,7 +65,7 @@ button, button:hover, button:focus, button:active
     font-size: 11px;
     color: #ffffff;
     text-align: center;
-    padding: 2px 45px 2px 25px;
+    padding: 8px 45px 8px 25px;
     cursor: pointer;
     letter-spacing: 0.2em;
     text-transform: uppercase;
