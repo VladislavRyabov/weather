@@ -58,6 +58,7 @@ button, button:hover, button:focus, button:active
 }
 .wrap__select {
     position: absolute;
+    z-index: 100 !important;
 }
 .style {
     background: #232323eb;
