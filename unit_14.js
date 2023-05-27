@@ -39,9 +39,9 @@ function showWeather(item) {
   if (item.weather[0]['description'] == 'clear sky') {
     video = './img/fog.jpg';
   } else if (item.weather[0]['description'] == 'overcast clouds') {
-    video = './img/rain.jpg';
+    video = './img/pexels.jpg';
   } else {
-    video = '/img/fog.jpg';
+    video = '/img/pexels.jpg';
   }
   return `
     <div class="test">
