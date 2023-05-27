@@ -41,7 +41,7 @@ function showWeather(item) {
   } else if (item.weather[0]['description'] == 'overcast clouds') {
     video = './img/rain.jpg';
   } else {
-    video = '';
+    video = '/img/fog.jpg';
   }
   return `
     <div class="test">
