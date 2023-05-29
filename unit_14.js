@@ -20,7 +20,7 @@ function getWeather() {
   .catch(function () {
     out.innerHTML = 'This city not found';
       city = 'London';
-      init()
+      getWeather();
   });
 }
 
@@ -36,24 +36,32 @@ function selectItem() {
 }
 
 function showWeather(item) {
-  if (item.weather[0]['description'] == 'clear sky') {
+  if (item.weather[0]['description'] == 'smoke' || item.weather[0]['description'] == 'mist') {
     video = './img/fog.jpg';
-  } else if (item.weather[0]['description'] == 'overcast clouds') {
-    video = './img/pexels.jpg';
+  } else if (item.weather[0]['description'] == 'overcast clouds' || item.weather[0]['description'] == 'scattered clouds' || item.weather[0]['description'] == 'few clouds') {
+    video = './img/clouds.jpg';
+  } else if (item.weather[0]['description'] == 'clear sky') {
+    video = './img/clear.jpg';
+  } else if (item.weather[0]['description'] == 'light rain') {
+    video = './img/thunderstorm-with-rain.jpg';
+  } else if (item.weather[0]['description'] == 'thunderstorm with rain') {
+    video = './img/thunderstorm-with-rain.jpg';
   } else {
-    video = '/img/pexels.jpg';
+    video = './img/fog.jpg';
   }
   return `
     <div class="test">
       <img class="card__img" src="${video}" alt="">
       <div class="out__wrap">
         <div class="card">
-            <div class="card__heading card__bt">
+            <div class="card__heading card__mb">
               <div class="card__city">${item.name}</div>
-              <img class="card__img-icon" src="https://openweathermap.org/img/wn/${item.weather[0]['icon']}@2x.png">
             </div>
             <div class="card__heading">
               <p class="card__сlouds">${item.weather[0]['description']}</p>
+              <img class="card__img-icon" src="https://openweathermap.org/img/wn/${item.weather[0]['icon']}@2x.png">
+            </div>
+            <div class="card__heading">
               <p class="card__degrees">${Math.round(item.main.temp - 273) + '&deg'}</p>
             </div>
             <div class="card__heading">

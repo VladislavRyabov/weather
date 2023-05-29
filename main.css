@@ -78,7 +78,7 @@ button, button:hover, button:focus, button:active
     width: 200px;
 }
 .test {
-    
+
 }
 .card__img {
     width: 100%;
@@ -102,7 +102,6 @@ button, button:hover, button:focus, button:active
 .card__heading {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .card__heading:first-child {
     flex-direction: column;
@@ -110,19 +109,12 @@ button, button:hover, button:focus, button:active
 .card__city {
     font-size: 50px;
 }
-.card__bt {
+.card__mb {
     margin-bottom: 50px;
 }
 .card__img-icon {
-    width: 90px;
-    height: 90px;
-}
-
-@media (max-width: 375px) {
-    p {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 560px) {
@@ -132,18 +124,18 @@ button, button:hover, button:focus, button:active
         gap: 10px;
         margin-top: 10px;
     }
-    
-}
-
-@media (max-width: 560px) {
+    p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
     .card {
         width: 310px;
         padding: 29px;
     }
-}
-
-@media (max-width: 400px) {
+    .card__mb {
+        margin-bottom: 30px;
+    }
     .card__city {
-        font-size: 30px;
+        font-size: 35px;
     }
 }
