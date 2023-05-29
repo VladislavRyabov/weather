@@ -4,7 +4,7 @@ let select = document.querySelector('.select');
 let searchInp = document.querySelector('.search');
 
 let city = 'London,uk';
-let video = '';
+let background = '';
 select.innerHTML = selectItem();
 getWeather();
 
@@ -37,25 +37,25 @@ function selectItem() {
 
 function showWeather(item) {
   if (item.weather[0]['description'] == 'smoke' || item.weather[0]['description'] == 'mist') {
-    video = './img/fog.jpg';
+    background = './img/fog.jpg';
   } else if (item.weather[0]['description'] == 'scattered clouds' || item.weather[0]['description'] == 'broken clouds')  {
-    video = './img/scattered-clouds.jpg';
+    background = './img/scattered-clouds.jpg';
   } else if (item.weather[0]['description'] == 'few clouds')  {
-    video = './img/few-clouds.jpg';
+    background = './img/few-clouds.jpg';
   } else if (item.weather[0]['description'] == 'overcast clouds')  {
-    video = './img/overcast-clouds.jpg';
+    background = './img/overcast-clouds.jpg';
   } else if (item.weather[0]['description'] == 'clear sky') {
-    video = './img/clear.jpg';
-  } else if (item.weather[0]['description'] == 'light rain' || item.weather[0]['description'] == 'drizzle' || item.weather[0]['description'] == 'light intensity shower rain') {
-    video = './img/light-rain.jpg';
+    background = './img/clear.jpg';
+  } else if (item.weather[0]['description'] == 'moderate rain' || item.weather[0]['description'] == 'light rain' || item.weather[0]['description'] == 'drizzle' || item.weather[0]['description'] == 'light intensity shower rain') {
+    background = './img/light-rain.jpg';
   } else if (item.weather[0]['description'] == 'thunderstorm with rain') {
-    video = './img/thunderstorm-with-rain.jpg';
+    background = './img/thunderstorm-with-rain.jpg';
   } else {
-    video = './img/fog.jpg';
+    background = './img/fog.jpg';
   }
   return `
     <div class="test">
-      <img class="card__img" src="${video}" alt="">
+      <img class="card__img" src="${background}" alt="">
       <div class="out__wrap">
         <div class="card">
             <div class="card__heading card__mb">

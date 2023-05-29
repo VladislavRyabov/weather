@@ -47,9 +47,6 @@ button, button:hover, button:focus, button:active
 .out {
     width: 100%; 
 }
-.out__wrap {
-
-}
 .wrap {
     margin: auto;
     display: flex;
