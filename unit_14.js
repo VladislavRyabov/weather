@@ -38,12 +38,16 @@ function selectItem() {
 function showWeather(item) {
   if (item.weather[0]['description'] == 'smoke' || item.weather[0]['description'] == 'mist') {
     video = './img/fog.jpg';
-  } else if (item.weather[0]['description'] == 'overcast clouds' || item.weather[0]['description'] == 'scattered clouds' || item.weather[0]['description'] == 'few clouds') {
-    video = './img/clouds.jpg';
+  } else if (item.weather[0]['description'] == 'scattered clouds' || item.weather[0]['description'] == 'broken clouds')  {
+    video = './img/scattered-clouds.jpg';
+  } else if (item.weather[0]['description'] == 'few clouds')  {
+    video = './img/few-clouds.jpg';
+  } else if (item.weather[0]['description'] == 'overcast clouds')  {
+    video = './img/overcast-clouds.jpg';
   } else if (item.weather[0]['description'] == 'clear sky') {
     video = './img/clear.jpg';
-  } else if (item.weather[0]['description'] == 'light rain') {
-    video = './img/thunderstorm-with-rain.jpg';
+  } else if (item.weather[0]['description'] == 'light rain' || item.weather[0]['description'] == 'drizzle' || item.weather[0]['description'] == 'light intensity shower rain') {
+    video = './img/light-rain.jpg';
   } else if (item.weather[0]['description'] == 'thunderstorm with rain') {
     video = './img/thunderstorm-with-rain.jpg';
   } else {
