@@ -47,7 +47,7 @@ function showWeather(item) {
   } else if (item.weather[0]['description'] == 'clear sky') {
     background = './img/clear.jpg';
   } else if (item.weather[0]['description'] == 'moderate rain' || item.weather[0]['description'] == 'light rain' || item.weather[0]['description'] == 'drizzle' || item.weather[0]['description'] == 'light intensity shower rain') {
-    background = './img/light-rain.jpg';
+    background = './img/rain.jpg';
   } else if (item.weather[0]['description'] == 'thunderstorm with rain') {
     background = './img/thunderstorm-with-rain.jpg';
   } else {
