@@ -76,9 +76,6 @@ button, button:hover, button:focus, button:active
     border: none;
     width: 200px;
 }
-.test {
-
-}
 .card__img {
     width: 100%;
     object-fit: cover;
@@ -101,6 +98,7 @@ button, button:hover, button:focus, button:active
 .card__heading {
     display: flex;
     justify-content: space-between;
+    align-items: self-end;
 }
 .card__heading:first-child {
     flex-direction: column;
@@ -110,10 +108,11 @@ button, button:hover, button:focus, button:active
 }
 .card__mb {
     margin-bottom: 50px;
+    align-items: baseline;
 }
 .card__img-icon {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
 }
 
 @media (max-width: 560px) {
@@ -135,5 +134,9 @@ button, button:hover, button:focus, button:active
     }
     .card__city {
         font-size: 35px;
+    }
+    .card__img-icon {
+        width: 40px;
+        height: 40px;
     }
 }

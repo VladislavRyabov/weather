@@ -66,6 +66,7 @@ function showWeather(item) {
               <img class="card__img-icon" src="https://openweathermap.org/img/wn/${item.weather[0]['icon']}@2x.png">
             </div>
             <div class="card__heading">
+              <p class="card__сlouds">Temperature</p>
               <p class="card__degrees">${Math.round(item.main.temp - 273) + '&deg'}</p>
             </div>
             <div class="card__heading">
@@ -84,9 +85,12 @@ function showWeather(item) {
               <p class="card__text">Pressure</p>
               <p class="card__сlouds">${item.main.pressure}</p>
             </div> 
-            <p class="card__сlouds">${item.wind.deg}</p>
             <div class="card__heading">
-              <p class="card__text"> Wind Speed</p>
+              <p class="card__text">Wind Direction</p>
+              <p class="card__сlouds">${item.wind.deg}</p>
+            </div>
+            <div class="card__heading">
+              <p class="card__text">Wind Speed</p>
               <p class="card__сlouds">${item.wind.speed}</p>
             </div>
         </div>
