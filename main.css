@@ -59,6 +59,7 @@ button, button:hover, button:focus, button:active
 .wrap__select {
     position: absolute;
     z-index: 100 !important;
+    margin-top: 40px;
 }
 .style {
     background: #232323eb;
@@ -122,7 +123,6 @@ button, button:hover, button:focus, button:active
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
     }
     p {
         font-size: 20px;
